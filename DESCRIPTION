@@ -1,0 +1,14 @@
+Package: jpegToolbox
+Type: Package
+Title: JPEG Image Compression Algorithm
+Version: 1.0
+Author: Matthias Carnein
+Maintainer: Matthias Carnein <Matthias.Carnein@uni-muenster.de>
+Description: Various implementations of the JPEG image compression algorithm. Both, interfaces to libjpeg and custom implementations are available.
+License: GPL-3
+LazyData: TRUE
+Imports: 
+    Rcpp (>= 0.12.9)
+LinkingTo: 
+    Rcpp
+RoxygenNote: 6.0.1

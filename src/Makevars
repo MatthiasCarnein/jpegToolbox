@@ -1,0 +1,6 @@
+# select libjpeg version
+libjpeg=unix-6b
+
+PKG_CPPFLAGS=-I$(libjpeg) -I../src
+PKG_LIBS= -L$(libjpeg) -ljpeg
+

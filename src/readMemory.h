@@ -1,0 +1,1 @@
+GLOBAL(void) jpeg_mem_src (j_decompress_ptr cinfo, unsigned char * inbuffer, unsigned long insize);

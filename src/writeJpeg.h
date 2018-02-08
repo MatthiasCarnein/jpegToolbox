@@ -1,0 +1,3 @@
+void writeJpeg_file(Rcpp::List image, int quality, int DCTmethod, Rcpp::IntegerVector subsampling, int force_baseline, int optimize_coding, int progressive, int smoothing, int fancyDownsampling, std::string filename);
+
+Rcpp::RawVector writeJpeg_memory(Rcpp::List image, int quality, int DCTmethod, Rcpp::IntegerVector subsampling, int force_baseline, int optimize_coding, int progressive, int smoothing, int fancyDownsampling);

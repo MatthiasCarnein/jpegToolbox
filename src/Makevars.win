@@ -1,0 +1,5 @@
+# select libjpeg version
+libjpeg=6b
+
+PKG_CPPFLAGS=-Iwin$(WIN)-$(libjpeg) -I../src
+PKG_LIBS= -Lwin$(WIN)-$(libjpeg) -ljpeg

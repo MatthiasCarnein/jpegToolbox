@@ -1,0 +1,1 @@
+int clipToJpegRange(int x);

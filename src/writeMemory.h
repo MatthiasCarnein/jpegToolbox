@@ -1,0 +1,1 @@
+GLOBAL(void) jpeg_mem_dest (j_compress_ptr cinfo, unsigned char ** outbuffer, unsigned long * outsize);
