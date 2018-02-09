@@ -8,7 +8,7 @@ In addition, the entire lossy compression pipeline is implemented in R for easy 
 
 ## Installation
 
-The easiest way to install the packageis by using devtools:
+The easiest way to install the package is by using devtools:
 
 ```R
 devtools::install_git("https://wiwi-gitlab.uni-muenster.de/m_carn01/jpegToolbox")
@@ -19,7 +19,7 @@ Alternatively, the package can be build from source.
 
 ## libjpeg Interface
 
-The package provides an interface to the popular libjpeg and libjpeg-turbo libraries.
+The package provides an interface to the popular libjpeg (and libjpeg-turbo) libraries.
 The interface is similar to the R-package 'jpeg' but allows to change more compression settings.
 
 The path to libjpeg needs to be specified in the src/makevars.win (Windows) or src/makevars (unix) files.
@@ -57,7 +57,7 @@ plot(image)
 
 ## Custom Implementation
 
-The library also provides its own implementations for all lossy compressions steps using similar syntax:
+The library also provides its own implementations for all lossy compression steps using similar syntax:
 
 ```R
 compressed = compressJpeg(image, quality = 100, subsampling = "444", force_baseline=T, linear=F, fancyDownsampling=T, libjpeg=6)
@@ -68,7 +68,7 @@ plot(decompressed)
 ```
 
 
-The above wrapper functions call the individual compressions and decompression steps one by one. This can also be done manually:
+The above wrapper functions call the individual compression and decompression steps one by one. This can also be done manually:
 
 ```R
 ## color conversion to YCbCr
@@ -108,3 +108,7 @@ plot(decompressed)
 ```
 
 Internally all functions interface c++, however most functions also provide a corresponding R implementation which is considerably slower but easier for debugging.
+
+## Acknowledgement
+
+This software is based in part on the work of the Independent JPEG Group.
