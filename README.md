@@ -2,8 +2,8 @@
 
 
 This R-package provides various implementations of the JPEG image compression algorithm.
-Most importantly, an interface to the popular libjpeg library is available. The package ships with pre-compiled libraries of libjpeg versions 6b, 8d and 9a for both Windows and Unix.
-In addition, the entire lossy compression pipeline is implemented in R for easy debugging as well as in C++ with interfaces to R for faster computation speed.
+ Most importantly, an interface to the popular libjpeg library is available. The package ships with pre-compiled libraries of libjpeg versions 6b, 8d and 9a for Windows. 
+ In addition, the entire lossy compression pipeline is implemented in R for easy debugging as well as in C++ with interfaces to R for faster computation speed.
 
 
 ## Installation
@@ -23,7 +23,7 @@ The package provides an interface to the popular libjpeg (and libjpeg-turbo) lib
 The interface is similar to the R-package 'jpeg' but allows to change more compression settings.
 
 The path to libjpeg needs to be specified in the src/makevars.win (Windows) or src/makevars (unix) files.
-A number of pre-compiled libraries for version 6b, 8d and 9a and both systems are available. Default is libjpeg 6b.
+A number of pre-compiled libraries for version 6b, 8d and 9a are available. Default is libjpeg 6b.
 A change of library requires recompilation of the package.
 
 Images can be read from file, plotted and recompressed to a file again. Various decompression and compression settings are available.
